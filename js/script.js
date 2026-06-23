@@ -159,20 +159,39 @@ document.addEventListener("DOMContentLoaded", () => {
   if (form) {
     const status = document.getElementById("formStatus");
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const subjectInput = document.getElementById("subject");
+    const subjectPills = document.querySelectorAll(".subject-pill");
+
+    subjectPills.forEach((pill) => {
+      pill.addEventListener("click", () => {
+        subjectPills.forEach((item) => item.classList.remove("active"));
+        pill.classList.add("active");
+
+        if (subjectInput) {
+          subjectInput.value = pill.dataset.subject || "";
+        }
+      });
+    });
 
     form.addEventListener("submit", (event) => {
       event.preventDefault();
 
-      const name = document.getElementById("name");
+      const firstName = document.getElementById("firstName");
+      const lastName = document.getElementById("lastName");
       const email = document.getElementById("email");
       const message = document.getElementById("message");
 
       let valid = true;
 
-      [name, email, message].forEach((field) => field.classList.remove("is-invalid"));
+      [firstName, lastName, email, message].forEach((field) => field.classList.remove("is-invalid"));
 
-      if (!name.value.trim()) {
-        name.classList.add("is-invalid");
+      if (!firstName.value.trim()) {
+        firstName.classList.add("is-invalid");
+        valid = false;
+      }
+
+      if (!lastName.value.trim()) {
+        lastName.classList.add("is-invalid");
         valid = false;
       }
 
@@ -192,9 +211,16 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      status.textContent = "Thanks for reaching out. This frontend demo is ready for backend integration.";
+      status.textContent = `Thanks ${firstName.value.trim()}! Your ${subjectInput ? subjectInput.value.toLowerCase() : "message"} request is ready for backend integration.`;
       status.style.color = "#38bdf8";
       form.reset();
+      subjectPills.forEach((item) => item.classList.remove("active"));
+      if (subjectPills[0]) {
+        subjectPills[0].classList.add("active");
+      }
+      if (subjectInput) {
+        subjectInput.value = "Collaboration";
+      }
     });
   }
 });

@@ -35,7 +35,7 @@
           <li class="nav-item"><a class="nav-link" data-nav="internships" href="internships.html">Internships</a></li>
           <li class="nav-item"><a class="nav-link" data-nav="certifications" href="certifications.html">Certifications</a></li>
           <li class="nav-item"><a class="nav-link" data-nav="achievements" href="achievements.html">Achievements</a></li>
-          <li class="nav-item"><a class="nav-link" data-nav="contact" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
             <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">
               <span class="theme-icon">☀</span>
@@ -54,10 +54,6 @@
             <div class="col-lg-7">
               <div class="home-copy">
                 <div class="eyebrow reveal">Computer Science Engineering Student</div>
-                <div class="home-intro reveal">
-                  <span class="intro-chip">Frontend Developer</span>
-                  <span class="intro-chip">AI Enthusiast</span>
-                </div>
                 <h1 class="hero-title reveal">Akshara Mallavarapu</h1>
                 <p class="hero-subtitle reveal">
                   Frontend-focused CSE student building clean digital experiences with a growing foundation in AI, machine learning, and software engineering.
@@ -68,63 +64,30 @@
                 </div>
                 <div class="hero-actions reveal">
                   <a class="btn btn-brand home-primary-btn" href="projects.html">View Projects</a>
-                  <a class="btn btn-soft home-secondary-btn" href="contact.html">Contact Me</a>
-                </div>
-                <div class="home-proof reveal">
-                  <div class="proof-item">
-                    <strong>9.22 CGPA</strong>
-                    <span>Strong academic consistency</span>
-                  </div>
-                  <div class="proof-item">
-                    <strong>2 Internships</strong>
-                    <span>Industry-oriented learning</span>
-                  </div>
-                  <div class="proof-item">
-                    <strong>AI + Research</strong>
-                    <span>Projects with depth and curiosity</span>
-                  </div>
+                  <a class="btn btn-soft home-secondary-btn" href="#contact">Contact Me</a>
                 </div>
               </div>
             </div>
             <div class="col-lg-5">
               <div class="hero-visual reveal">
-                <div class="home-profile-card">
-                  <div class="profile-header">
-                    <span class="profile-kicker">Professional Snapshot</span>
-                    <div class="profile-orbit"></div>
+                <div class="mock-ide">
+                  <div class="ide-titlebar">
+                    <div class="ide-controls">
+                      <span class="control close"></span>
+                      <span class="control minimize"></span>
+                      <span class="control expand"></span>
+                    </div>
+                    <span class="ide-filename">developer.js</span>
                   </div>
-                  <div class="profile-identity">
-                    <div class="identity-mark">AM</div>
-                    <div>
-                      <h2>Akshara Mallavarapu</h2>
-                      <p>Frontend Developer · CSE Student</p>
-                    </div>
-                  </div>
-                  <p class="profile-summary">
-                    High-performing CSE student with strong academics, applied project work, and a clear interest in building meaningful software.
-                  </p>
-                  <div class="profile-chips">
-                    <span>CGPA 9.22</span>
-                    <span>AI Projects</span>
-                    <span>Hackathon Rank</span>
-                  </div>
-                  <div class="profile-grid">
-                    <div class="profile-metric">
-                      <strong>2023-2027</strong>
-                      <span>B.Tech Journey</span>
-                    </div>
-                    <div class="profile-metric">
-                      <strong>10+</strong>
-                      <span>Certifications</span>
-                    </div>
-                    <div class="profile-metric">
-                      <strong>Research</strong>
-                      <span>Quantum + AI focus</span>
-                    </div>
-                    <div class="profile-metric">
-                      <strong>Winner</strong>
-                      <span>University-level recognition</span>
-                    </div>
+                  <div class="ide-body">
+                    <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  name: <span class="code-string">"Akshara Mallavarapu"</span>,
+  education: <span class="code-string">"B.Tech CSE (2023-2027)"</span>,
+  cgpa: <span class="code-number">9.22</span>,
+  skills: [<span class="code-string">"Frontend"</span>, <span class="code-string">"AI/ML"</span>],
+  research: <span class="code-string">"Quantum + AI"</span>,
+  status: <span class="code-string">"Open to Opportunities"</span>
+};</code></pre>
                   </div>
                 </div>
               </div>
@@ -205,15 +168,88 @@
         </div>
       </div>
     </section>
+
+    <section class="section-pad section-shell contact-showcase-section pt-0" id="contact">
+      <div class="container">
+        <div class="section-heading contact-heading text-center mx-auto reveal">
+          <span class="eyebrow">Get In Touch</span>
+          <h2>Let's Connect</h2>
+          <p>
+            Whether you have an opportunity, a project to collaborate on, or just want to say hi, feel free to reach out!
+          </p>
+        </div>
+        
+        <div class="row g-4 justify-content-center reveal">
+          <!-- Email Card -->
+          <div class="col-md-6 col-lg-3">
+            <a href="mailto:m.akshara0806@gmail.com" class="contact-card-new">
+              <div class="contact-card-icon icon-email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <h3>Email</h3>
+              <p>m.akshara0806@gmail.com</p>
+            </a>
+          </div>
+          
+          <!-- Phone Card -->
+          <div class="col-md-6 col-lg-3">
+            <a href="tel:+918522075033" class="contact-card-new">
+              <div class="contact-card-icon icon-phone">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <h3>Phone</h3>
+              <p>+91 8522075033</p>
+            </a>
+          </div>
+          
+          <!-- GitHub Card -->
+          <div class="col-md-6 col-lg-3">
+            <a href="https://github.com/akshara826" target="_blank" rel="noreferrer" class="contact-card-new">
+              <div class="contact-card-icon icon-github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </div>
+              <h3>GitHub</h3>
+              <p>github.com/akshara826</p>
+            </a>
+          </div>
+          
+          <!-- LinkedIn Card -->
+          <div class="col-md-6 col-lg-3">
+            <a href="https://www.linkedin.com/in/akshara-mallavarapu-a35a412a4" target="_blank" rel="noreferrer" class="contact-card-new">
+              <div class="contact-card-icon icon-linkedin">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <h3>LinkedIn</h3>
+              <p>linkedin.com/in/akshara...</p>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Social Links at the bottom -->
+        <div class="contact-social-bottom text-center reveal mt-5">
+          <p class="social-label">Follow & Connect</p>
+          <div class="social-links-row">
+            <a href="https://github.com/akshara826" target="_blank" rel="noreferrer" class="social-icon-btn github" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/akshara-mallavarapu-a35a412a4" target="_blank" rel="noreferrer" class="social-icon-btn linkedin" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
       <p class="mb-0">&copy; 2026 Akshara Mallavarapu. Crafted for placements, internships, and opportunities.</p>
       <div class="footer-links">
-        <a href="mailto:akshara06@gmail.com">Email</a>
+        <a href="mailto:m.akshara0806@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/akshara-mallavarapu-a35a412a4" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/akshara6" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/akshara826" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </div>
   </footer>
