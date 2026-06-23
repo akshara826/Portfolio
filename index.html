@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshara Mallavarapu | Portfolio</title>
+  <meta name="description" content="Portfolio of Akshara Mallavarapu, a Computer Science Engineering student focused on frontend development, AI, and quantum computing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-orb"></div>
+  </div>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <span>&uarr;</span>
+  </button>
+
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Akshara<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" data-nav="home" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="about" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="skills" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="projects" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="internships" href="internships.html">Internships</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="certifications" href="certifications.html">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="achievements" href="achievements.html">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav="contact" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">
+              <span class="theme-icon">☀</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-section home-hero section-pad">
+      <div class="container">
+        <div class="home-hero-shell glass-card">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <div class="home-copy">
+                <div class="eyebrow reveal">Computer Science Engineering Student</div>
+                <div class="home-intro reveal">
+                  <span class="intro-chip">Frontend Developer</span>
+                  <span class="intro-chip">AI Enthusiast</span>
+                </div>
+                <h1 class="hero-title reveal">Akshara Mallavarapu</h1>
+                <p class="hero-subtitle reveal">
+                  Frontend-focused CSE student building clean digital experiences with a growing foundation in AI, machine learning, and software engineering.
+                </p>
+                <div class="typing-line reveal">
+                  <span class="typing-prefix">Currently shaping into</span>
+                  <span class="typing-text" id="typingText"></span>
+                </div>
+                <div class="hero-actions reveal">
+                  <a class="btn btn-brand home-primary-btn" href="projects.html">View Projects</a>
+                  <a class="btn btn-soft home-secondary-btn" href="contact.html">Contact Me</a>
+                </div>
+                <div class="home-proof reveal">
+                  <div class="proof-item">
+                    <strong>9.22 CGPA</strong>
+                    <span>Strong academic consistency</span>
+                  </div>
+                  <div class="proof-item">
+                    <strong>2 Internships</strong>
+                    <span>Industry-oriented learning</span>
+                  </div>
+                  <div class="proof-item">
+                    <strong>AI + Research</strong>
+                    <span>Projects with depth and curiosity</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="hero-visual reveal">
+                <div class="home-profile-card">
+                  <div class="profile-header">
+                    <span class="profile-kicker">Professional Snapshot</span>
+                    <div class="profile-orbit"></div>
+                  </div>
+                  <div class="profile-identity">
+                    <div class="identity-mark">AM</div>
+                    <div>
+                      <h2>Akshara Mallavarapu</h2>
+                      <p>Frontend Developer · CSE Student</p>
+                    </div>
+                  </div>
+                  <p class="profile-summary">
+                    High-performing CSE student with strong academics, applied project work, and a clear interest in building meaningful software.
+                  </p>
+                  <div class="profile-chips">
+                    <span>CGPA 9.22</span>
+                    <span>AI Projects</span>
+                    <span>Hackathon Rank</span>
+                  </div>
+                  <div class="profile-grid">
+                    <div class="profile-metric">
+                      <strong>2023-2027</strong>
+                      <span>B.Tech Journey</span>
+                    </div>
+                    <div class="profile-metric">
+                      <strong>10+</strong>
+                      <span>Certifications</span>
+                    </div>
+                    <div class="profile-metric">
+                      <strong>Research</strong>
+                      <span>Quantum + AI focus</span>
+                    </div>
+                    <div class="profile-metric">
+                      <strong>Winner</strong>
+                      <span>University-level recognition</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 stats-row">
+          <div class="col-sm-6 col-xl-3">
+            <div class="glass-card stat-card home-stat-card reveal">
+              <span class="stat-label">Academics</span>
+              <h3 class="counter" data-target="9.22">0</h3>
+              <p>Current CGPA</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="glass-card stat-card home-stat-card reveal">
+              <span class="stat-label">Projects</span>
+              <h3 class="counter" data-target="2">0</h3>
+              <p>Major Projects</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="glass-card stat-card home-stat-card reveal">
+              <span class="stat-label">Experience</span>
+              <h3 class="counter" data-target="2">0</h3>
+              <p>Internships</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-3">
+            <div class="glass-card stat-card home-stat-card reveal">
+              <span class="stat-label">Learning</span>
+              <h3 class="counter" data-target="10">0</h3>
+              <p>Certifications and Credentials</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad section-shell home-highlights">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Highlights</span>
+          <h2>Why recruiters should keep reading</h2>
+          <p>
+            A focused profile that combines strong academic performance, practical development exposure, and research-led technical curiosity.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4">
+            <div class="glass-card feature-card home-feature-card reveal">
+              <span class="feature-index">01</span>
+              <h3>Research-driven thinking</h3>
+              <p>
+                Built an Alzheimer's detection system using deep learning and variational quantum classification for a more meaningful, problem-first project narrative.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="glass-card feature-card home-feature-card reveal">
+              <span class="feature-index">02</span>
+              <h3>Applied internship exposure</h3>
+              <p>
+                Gained practical exposure through Infosys Springboard and Java Full Stack training with hands-on work across real application flows.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4">
+            <div class="glass-card feature-card home-feature-card reveal">
+              <span class="feature-index">03</span>
+              <h3>Consistent academic strength</h3>
+              <p>
+                Maintained a strong record from school through engineering, supported by a 9.22 CGPA and multiple certifications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">&copy; 2026 Akshara Mallavarapu. Crafted for placements, internships, and opportunities.</p>
+      <div class="footer-links">
+        <a href="mailto:akshara06@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/akshara-mallavarapu-a35a412a4" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/akshara6" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
